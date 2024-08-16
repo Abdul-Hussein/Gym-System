@@ -45,10 +45,6 @@ public class LoginContoller {
 		return loginService.loginAdmin(login);
 	}
 
-	@RequestMapping("/visitor")
-	public String handleVisitor(HttpSession session) {
-		loginService.visitor(); // Sets session attribute to 'visitor'
-		return "visitorHomePage"; // Redirect to a visitor-specific home page or view
-	}
+
 
 }
