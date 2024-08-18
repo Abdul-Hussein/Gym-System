@@ -24,7 +24,7 @@ public class LoginContoller {
 		return loginService.registerUser(loginDto);
 
 	}
-
+//User updates by admin
 	@PostMapping("/updateUser")
 	public String updateUser(@RequestBody LoginDto login) {
 		boolean service = loginService.updateUser(login);
@@ -34,12 +34,12 @@ public class LoginContoller {
 			return "Failed to update User.";
 		}
 	}
-
+//User login
 	@PostMapping("/login")
 	public boolean userLogin(@RequestBody LoginDto login) {
 		return loginService.loginUser(login);
 	}
-
+//Admin Login
 	@PostMapping("/admin/login")
 	public boolean adminLogin(@RequestBody LoginDto login) {
 		return loginService.loginAdmin(login);
