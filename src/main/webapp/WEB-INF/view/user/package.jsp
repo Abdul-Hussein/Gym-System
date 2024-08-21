@@ -24,6 +24,9 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+p1{
+font-size: 2rem;
+}
 
 h2,h1 {
     margin-top: 4rem;
@@ -70,7 +73,20 @@ button:hover {
     margin-bottom: 2rem;
     color: #B08F44;
 }
-
+.photo-icon {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5em;
+	margin: 0;
+	color: #B08F44;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo-subtitle {
+	font-size: 1rem;
+	margin:0;
+	margin-bottom: 2rem;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .form input {
     width: calc(100% - 2.4rem);
     padding: 1rem;
@@ -117,6 +133,31 @@ button:hover {
 
 .form button:hover {
     background-color: #005f73;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Playwrite DE Grund', sans-serif;
 }
 
 footer {
@@ -216,6 +257,15 @@ footer p {
 </head>
 <body>
     <%@ include file="navigate.jsp"%>
+    
+<div class="banner">
+    <img src="/gym-mgmt/resources/images/lab-bg.avif" alt="Train Like a Champion">
+    <div class="banner-text">
+    			<h1 class="photo-icon">CITADEL</h1>
+				<h2 class="photo-subtitle">LONDON</h2>
+        <p1>TRAIN LIKE A CHAMPION<p>
+    </div>
+</div>
 
     <h1>OUR PACKAGES</h1>
     <p class="playwrite-de-grund-bold">Explore our diverse range of packages tailored to your fitness goals.</p>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CITADEL London - Train Like a Champion</title>
+<title>CITADEL London</title>
 <link
 	href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
 	rel="stylesheet">
