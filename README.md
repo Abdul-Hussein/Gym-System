@@ -1,6 +1,3 @@
-Certainly! Here's a GitHub README template for your gym management system:
-
----
 
 # Gym Management System
 
