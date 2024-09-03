@@ -18,6 +18,7 @@
         <li class="nav-item">
             <a class="nav-link" href="${pageContext.request.contextPath}/trainers/view">PERSONAL TRAINERS</a>
         </li>
+        
 
         <!-- Dropdown Menu -->
         <li class="nav-item dropdown">

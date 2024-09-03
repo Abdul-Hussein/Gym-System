@@ -10,7 +10,7 @@ $(document).ready(function() {
 		} else {
 			$("#addTrainer").text("Add Trainer");
 		}
-	});
+	});	
 
 	$("#submit").click(function() {
 		var id = $("#trainersId").val();
@@ -144,8 +144,8 @@ $(document).ready(function() {
 					card.append(
 						$("<button>")
 							.text("BOOK")
-							.click(function() {
-								window.location.href = "${pageContext.request.contextPath}/club";
+							.click(function() {					  
+								window.location.href = "/gym-mgmt/contact";
 							})
 					);
 

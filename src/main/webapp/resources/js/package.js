@@ -77,7 +77,7 @@ $(document).ready(function() {
 						$("<button>")
 							.text("CONTACT")
 							.click(function() {
-								window.location.href = "${pageContext.request.contextPath}/club";
+								window.location.href = "/gym-mgmt/contact";
 							})
 					);
 

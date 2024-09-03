@@ -8,7 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -34,9 +35,11 @@ public class GymMembership {
 	@Column(name = "phone_number", unique = true)
 	private String phoneNumber;
 
-	@ManyToOne
-	@JoinColumn(name = "user_id")
+	@OneToOne
+	@MapsId
+	@JoinColumn(name = "user_id",unique = true)
 	private User user;
+
 
 	public int getId() {
 		return id;

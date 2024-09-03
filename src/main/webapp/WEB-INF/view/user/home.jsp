@@ -20,51 +20,48 @@ body {
 	overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-
-
 .video-section {
-    position: relative;
-    width: 100%; 
-    height: 87vh;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
+	position: relative;
+	width: 100%;
+	height: 87vh;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
 }
 
-
 .back-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .video-overlay {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    max-width: 100%;
-    height: 100%; /* Ensure the overlay covers the entire section */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	max-width: 100%;
+	height: 100%; /* Ensure the overlay covers the entire section */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .video-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 60px; /* Adjust as needed to create space above buttons */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 60px;
+	/* Adjust as needed to create space above buttons */
 }
-
 
 .video-icon {
 	font-family: 'Playfair Display', serif;
@@ -86,46 +83,45 @@ body {
 	padding: 10px 20px;
 	font-size: 1.2em;
 	color: white;
-	background-color:black;
+	background-color: black;
 	border: none;
-	
 	cursor: pointer;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	text-decoration: none;
 	transition: text-decoration 0.3s ease;
 }
 
-
 .video-titles {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-    padding: 10px 0; /* Adjust padding to your preference */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%; /* Full width */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Transparent black background */
+	padding: 10px 0; /* Adjust padding to your preference */
 }
 
 .video-titles button {
-    background: none;
-    border: none;
-    color: #B08F44;
-    font-size: 1.2em;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
+	background: none;
+	border: none;
+	color: #B08F44;
+	font-size: 1.2em;
+	cursor: pointer;
+	padding: 10px 20px;
+	transition: color 0.3s ease;
 }
 
 .video-titles button:hover {
-    color: white;
+	color: white;
 }
 
 .vertical-divider {
-    width: 0.1rem;
-    height: 7rem;
-    background-color: white;
+	width: 0.1rem;
+	height: 7rem;
+	background-color: white;
 }
 
 /* Responsive Design */
@@ -158,12 +154,13 @@ p {
 	color: #ccc;
 }
 
-.description{
-wdith:900px;
-margin-bottom:4rem;
-margin-top:3rem;
-text-align: center;
+.description {
+	wdith: 900px;
+	margin-bottom: 4rem;
+	margin-top: 3rem;
+	text-align: center;
 }
+
 h1 {
 	text-align: center;
 	font-size: 3rem;
@@ -314,7 +311,7 @@ button:hover {
 
 
 	<!-- Video Section -->
-<!-- Video Section -->
+	<!-- Video Section -->
 	<section class="video-section">
 		<video autoplay loop muted plays-inline class="back-video">
 			<source src="/gym-mgmt/resources/videos/home.mp4" type="video/mp4">
@@ -324,7 +321,7 @@ button:hover {
 			<div class="video-content">
 				<h1 class="video-icon">CITADEL</h1>
 				<h2 class="video-subtitle">London</h2>
-				<button class="video-button">FIND OUT MORE</button>
+				<button class="video-button" id="contact">FIND OUT MORE</button>
 			</div>
 			<div class="video-titles">
 				<button id="citadelLabButton">THE CLUB</button>
@@ -338,12 +335,13 @@ button:hover {
 
 	<h1>TRAIN LIKE A CHAMPION</h1>
 
-	<p class="description">Founded in 2020, CITADEL is the trailblazer in fitness and
-		wellbeing, pushing boundaries in what a boxing gym should and could
-		be. Progressive training modalities, elite-standard equipment, and
-		expert-level trainers come together in an award-winning luxury space.</p>
+	<p class="description">Founded in 2020, CITADEL is the trailblazer
+		in fitness and wellbeing, pushing boundaries in what a boxing gym
+		should and could be. Progressive training modalities, elite-standard
+		equipment, and expert-level trainers come together in an award-winning
+		luxury space.</p>
 
-	
+
 
 	<!-- Additional Sections -->
 	<div class="section"
@@ -355,10 +353,10 @@ button:hover {
 	<div class="section"
 		style="background-image: url('/gym-mgmt/resources/images/community-bg.jpeg');">
 		<h2 class="section-title">CITADEL RETREATS</h2>
-		<button >FIND OUT MORE</button>
+		<button id="contact">FIND OUT MORE</button>
 	</div>
 
-	<div class="section" 
+	<div class="section"
 		style="background-image: url('images/more-than-a-gym-bg.jpg');">
 		<h2 class="section-title">More Than A Gym</h2>
 		<div class="cards-container">
@@ -377,7 +375,8 @@ button:hover {
 			<div class="card"
 				style="background-image: url('/gym-mgmt/resources/images/personaltraining-bg.avif');">
 				<div class="card-content">
-					<a href="${pageContext.request.contextPath}/trainers/view">PERSONAL TRAINING</a>
+					<a href="${pageContext.request.contextPath}/trainers/view">PERSONAL
+						TRAINING</a>
 				</div>
 			</div>
 		</div>
@@ -400,48 +399,60 @@ button:hover {
 	</div>
 </body>
 </html>
-<script>	
-let isLabSelected = false;
-let isRetreatSelected = false;
+<script>
+	let isLabSelected = false;
+	let isRetreatSelected = false;
 
-document.getElementById("citadelLabButton").addEventListener("click", function() {
-    if (!isLabSelected) {
-        document.querySelector(".video-section").style.backgroundImage = "url('/gym-mgmt/resources/images/lab.jpg')";
-        document.querySelector(".back-video").style.display = "none";
-        document.querySelector(".video-button").innerHTML = 'VIEW';
-        document.querySelector(".video-button").addEventListener("click", function(){
-            window.location.href = "${pageContext.request.contextPath}/club";
-        });
+	document
+			.getElementById("citadelLabButton")
+			.addEventListener(
+					"click",
+					function() {
+						if (!isLabSelected) {
+							document.querySelector(".video-section").style.backgroundImage = "url('/gym-mgmt/resources/images/lab.jpg')";
+							document.querySelector(".back-video").style.display = "none";
+							document.querySelector(".video-button").innerHTML = 'VIEW';
+							document
+									.querySelector(".video-button")
+									.addEventListener(
+											"click",
+											function() {
+												window.location.href = "${pageContext.request.contextPath}/club";
+											});
 
-        isLabSelected = true;
-        isRetreatSelected = false;
-    } else {
-        document.querySelector(".video-section").style.backgroundImage = "none";
-        document.querySelector(".back-video").style.display = "block";
-        this.innerHTML = 'CITADEL LAB';
-        document.querySelector(".video-button").innerHTML = 'FIND OUT MORE';
-        isLabSelected = false;
-    }
-});
+							isLabSelected = true;
+							isRetreatSelected = false;
+						} else {
+							document.querySelector(".video-section").style.backgroundImage = "none";
+							document.querySelector(".back-video").style.display = "block";
+							this.innerHTML = 'CITADEL LAB';
+							document.querySelector(".video-button").innerHTML = 'FIND OUT MORE';
+							isLabSelected = false;
+						}
+					});
 
-document.getElementById("sweatByCitadelButton").addEventListener("click", function() {
-    if (!isRetreatSelected) {
-        document.querySelector(".video-section").style.backgroundImage = "url('/gym-mgmt/resources/images/citadel_retreats.jpg')";
-        document.querySelector(".back-video").style.display = "none";
+	document.getElementById("contact").addEventListener("click", function() {
+		window.location.href = "/gym-mgmt/contact";
+	});
+	document
+			.getElementById("sweatByCitadelButton")
+			.addEventListener(
+					"click",
+					function() {
+						if (!isRetreatSelected) {
+							document.querySelector(".video-section").style.backgroundImage = "url('/gym-mgmt/resources/images/citadel_retreats.jpg')";
+							document.querySelector(".back-video").style.display = "none";
 
-        document.querySelector(".video-button").innerHTML = 'BOOK';
-        
-    
-        isRetreatSelected = true;
-        isLabSelected = false;
-    } else {
-        document.querySelector(".video-section").style.backgroundImage = "none";
-        document.querySelector(".back-video").style.display = "block";
-        this.innerHTML = 'CITADEL RETREATS';
-        document.querySelector(".video-button").innerHTML = 'FIND OUT MORE';
-        isRetreatSelected = false;
-    }
-});
-
+							document.querySelector(".video-button").innerHTML = 'BOOK';
+							isRetreatSelected = true;
+							isLabSelected = false;
+						} else {
+							document.querySelector(".video-section").style.backgroundImage = "none";
+							document.querySelector(".back-video").style.display = "block";
+							this.innerHTML = 'CITADEL RETREATS';
+							document.querySelector(".video-button").innerHTML = 'FIND OUT MORE';
+							isRetreatSelected = false;
+						}
+					});
 </script>
 
