@@ -19,7 +19,7 @@ import com.project.Gymmgmt.model.GymMembership;
 import com.project.Gymmgmt.service.GymMembershipService;
 
 @RestController
-@RequestMapping("/api/gymMemberships")
+@RequestMapping("api/gymMemberships")
 public class GymMembershipController {
 
 	private final GymMembershipService service;

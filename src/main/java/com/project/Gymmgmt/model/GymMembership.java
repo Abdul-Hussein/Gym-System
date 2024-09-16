@@ -2,6 +2,7 @@ package com.project.Gymmgmt.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -35,10 +36,10 @@ public class GymMembership {
 	@Column(name = "phone_number", unique = true)
 	private String phoneNumber;
 
-	@OneToOne
-	@MapsId
-	@JoinColumn(name = "user_id",unique = true)
+	@OneToOne(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "user_id", unique = true)
 	private User user;
+
 
 
 	public int getId() {

@@ -139,16 +139,30 @@ public class GymMembershipServiceImpl implements GymMembershipService {
 	@Override
 	public boolean deleteGymMembership(Integer id) {
 	    try {
-	        if (gymMembershipRepository.existsById(id)) {
+	        Optional<GymMembership> optionalGymMembership = gymMembershipRepository.findById(id);
+	        if (optionalGymMembership.isPresent()) {
+	            GymMembership gymMembership = optionalGymMembership.get();
+
+	            // Remove the association with the User
+	            gymMembership.setUser(null);
+	            gymMembershipRepository.save(gymMembership);  // Save the updated GymMembership
+
+	            // Now delete the GymMembership without affecting the User
 	            gymMembershipRepository.deleteById(id);
+
+	            System.out.println("GymMembership with ID " + id + " successfully deleted, without deleting the user.");
 	            return true;
 	        } else {
+	            System.out.println("GymMembership with ID " + id + " not found.");
 	            return false;
 	        }
 	    } catch (Exception e) {
+	        System.err.println("Error occurred while deleting GymMembership with ID " + id);
 	        e.printStackTrace();
 	        return false;
 	    }
 	}
+
+
 
 }
