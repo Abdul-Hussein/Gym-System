@@ -144,7 +144,7 @@ This Gym Management System is a web application that allows gym administrators a
 
 5. Deploy the WAR file to Apache Tomcat.
 
-6. Access the application in your web browser at `http://localhost:8080/gym-mgmt/login`.
+6. Access the application in your web browser at `http://localhost:8093/gym-mgmt/login`.
 
 ## Usage
 
